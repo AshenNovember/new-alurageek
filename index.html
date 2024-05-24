@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraGeek!</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    <header>
+    </header>
+    <section class="menu">
+        <header>
+            <h3 class="title"><img class="s2" src="assets\vector.svg">AluraGeek </h3>
+        </header>
+    </section> 
+    <main>
+        <section class="esquerda">
+            <h3>MEUS PRODUTOS:</h3>
+            <div id="produtoLista">
+                <table>
+                    <tbody>
+                        <!-- Produtos  -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <section class="direita">
+            <h3>ADICIONAR PRODUTO:</h3>
+            <div>
+                <form class="adicionar-produto" id="produtoForm" method="POST" onsubmit="return validarImagem()">
+                    <input class="campo" id="nome" placeholder="nome . . ." type="text"/>
+                    <input class="campo" id="valor" placeholder="valor . . ."type="number"/>
+
+                    <label for="imagem" class="campo-x">
+                        imagem . . . 
+                        <img id="campo-ok" align="right" src="./assets/ok.png" />
+                    </label>
+                    <input id="imagem" accept="image/png, image/jpeg" placeholder="imagem . . ." type="file"/>
+                    <div class="botoes">
+                        <button type="submit" class="btn_guardar">Guardar</button>
+                        <button onclick="limpar()" class="btn_limpar">Limpar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+<footer>
+    <div class="footer__rodape">
+        <h3 class="title"><img class="s2" src="assets\vector.svg">AluraGeek</h3>
+        <p>Desenvolvido por Rodrigo Correa</p>
+        <p>2024</p>
+    </div>
+</footer>
+</html>
